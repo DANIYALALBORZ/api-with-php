@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #333;
+            color: wheat;
+            padding: 2rem;
+            font-family: tahoma;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+
+        input,
+        textarea,
+        button {
+            font-family: tahoma;
+            text-align: center;
+            font-size: 2rem;
+            display: block;
+            margin: .5rem 0;
+            padding: .5rem;
+            background-color: wheat;
+            color: #333;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 50%;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        .users {
+            background: wheat;
+            color: #333;
+            width: 100%;
+            margin: .5rem 0;
+            padding: 1rem;
+            border: white;
+            border-radius: 20px;
+            font-size: 1.5rem;
+
+            >p {
+                margin: .5rem 0;
+            }
+        }
+
+        textarea {
+            min-height: 8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Add users with real local php api
+    </h1>
+
+    <div>
+        <input id="name-input" type="text" placeholder="name*">
+        <input id="email-input" type="text" placeholder="email*">
+        <input id="age-input" type="text" placeholder="age*">
+        <textarea id="desc-input" type="text" placeholder="description"></textarea>
+        <button id="save-btn">save</button>
+    </div>
+
+    <div id="users"></div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
